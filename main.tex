@@ -1,0 +1,29 @@
+\documentclass[12pt]{ctexart}
+
+
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{layout}
+\usepackage{setspace}%使用间距宏包
+
+\usepackage{multicol}
+
+%\pagestyle{empty}%不设置页眉页脚
+
+\pagestyle{fancy}% 设置页眉
+
+\chead{\textbf{天大附小 \hspace{5em} 三年 $\cdot$ 3班\hspace{5em} 姓名：\hfill }}
+
+\cfoot{\thepage}
+
+\renewcommand{\headrulewidth}{1pt}%页眉线宽，设为0可以去页眉线
+
+\setlength{\parindent}{0em} 
+%================================================================%**
+\begin{document}
+\begin{spacing}{3.0}%%行间距变为double-space
+\begin{multicols}{3}
+\input{math.txt}
+\end{multicols}
+\end{spacing}
+\end{document}
